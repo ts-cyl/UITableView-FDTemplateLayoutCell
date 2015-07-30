@@ -232,6 +232,7 @@ static CGFloat const _FDTemplateLayoutCellHeightCacheAbsentValue = -1;
     });
     
     CFRunLoopAddObserver(runLoop, observer, runLoopMode);
+    CFRelease(observer);
 }
 
 - (void)fd_precacheIndexPathIfNeeded:(NSIndexPath *)indexPath
